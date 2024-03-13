@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamoRouteFiftyThreeTest", "..\DynamoRouteFiftyThreeTest\DynamoRouteFiftyThreeTest.csproj", "{817ED1F3-82E8-414D-9156-D00210C1D0E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{9B0BC4F6-816F-46CC-93C8-996B52634A9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B0BC4F6-816F-46CC-93C8-996B52634A9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B0BC4F6-816F-46CC-93C8-996B52634A9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{817ED1F3-82E8-414D-9156-D00210C1D0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{817ED1F3-82E8-414D-9156-D00210C1D0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{817ED1F3-82E8-414D-9156-D00210C1D0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{817ED1F3-82E8-414D-9156-D00210C1D0E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
