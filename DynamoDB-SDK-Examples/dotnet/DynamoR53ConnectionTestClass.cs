@@ -5,6 +5,8 @@ using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
 using System.Threading.Tasks;
+using Amazon;
+using Amazon.Runtime;
 
 namespace DotnetSamples
 {
@@ -171,7 +173,11 @@ namespace DotnetSamples
             {
                 AmazonDynamoDBConfig clientConfig = new AmazonDynamoDBConfig();
                 // set the endpoint URL
+                clientConfig.RegionEndpoint = null;
                 clientConfig.ServiceURL = "http://samtestddbroutetestone.bsatechnologies.net";
+
+                //AWSCredentials creds = new AWSCredentials();
+
 
                 var client = new AmazonDynamoDBClient(clientConfig);
 
@@ -179,11 +185,11 @@ namespace DotnetSamples
                 Dictionary<string, AttributeValue> attributes = new Dictionary<string, AttributeValue>();
 
                 // MovieId
-                attributes["MovieID"] = new AttributeValue { N = "5" };
+                attributes["MovieID"] = new AttributeValue { N = "8" };
                 // Director is string
-                attributes["Director"] = new AttributeValue { S = "Shyam Test" };
+                attributes["Director"] = new AttributeValue { S = "Shyam Test 8" };
                 // Movie Name is string
-                attributes["Name"] = new AttributeValue { S = "SamTestMovieName" };
+                attributes["Name"] = new AttributeValue { S = "SamTestMovieName 8" };
 
                 // Create PutItem request
                 PutItemRequest request = new PutItemRequest
@@ -191,6 +197,8 @@ namespace DotnetSamples
                     TableName = "SamTest_DDB_Global_MovieTable",
                     Item = attributes
                 };
+
+                
 
                 // Issue PutItem request
                 var response = await client.PutItemAsync(request);
