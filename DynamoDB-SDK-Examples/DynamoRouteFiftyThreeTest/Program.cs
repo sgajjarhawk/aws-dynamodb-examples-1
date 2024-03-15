@@ -11,10 +11,6 @@ namespace DynamoRouteFiftyThreeTest
             Console.WriteLine("Hello World!");
 
             var testddb = new DotnetSamples.DynamoR53ConnectionTestClass();
-            //var task2 = testddb.GlobalTableQueryTestFunction2Async();
-            //task2.Wait();
-
-            //testddb.GlobalTableQueryTestFunction3();
 
             var task3 = testddb.DynamoRoute53PutItemTest1();
             task3.Wait();            
